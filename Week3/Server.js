@@ -1,10 +1,6 @@
 const express = require("express");
 const app = express();
-/*
-app.get("/recycled", (req, res)=> {
-    res.send(recycledItems)
-});
-*/
+app.use(express.json());
 
 app.use('/recycled', require('./ExpressRouter') )
 
